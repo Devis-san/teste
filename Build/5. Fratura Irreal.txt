@@ -1,0 +1,11 @@
+Arma: Realidades Fraturadas, Habilidade: Queda Titânica, Mod: Placa Ciclônica, Célula: Célula de Dominação +3 e Célula de Predador +3, Vínculo: Desprezo Soturno.
+Onicélula: Disciplina
+
+Capacete: Elmo Tece-tempo, Célula: Célula de Adrenalina +3
+Peitoral: Sombra do Thrax, Célula: Célula Amoque +3
+Luvas: Manoplas Tece-tempo, Célula: Célula de Adrenalina +3
+Botas: Astúcia do Thrax, Célula: Célula Amoque +3
+
+Lanterna: Fervor de Shrike, Célula: Célula Conduíte +3
+
+Função: Build de Dano e DPS de Golpeadora

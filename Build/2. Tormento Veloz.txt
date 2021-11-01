@@ -1,0 +1,11 @@
+Arma: Tormentos Lúgubres, Câmara: Câmara Metralhadora, Empunhadura: Empunhadura do Capitão, Mod: Miras Precisas, Célula: Célula de Fúria Evasiva +3 e Célula de Catalizador +3, Vínculo: Brados de Riftstalker.
+Onicélula: Tempestade
+
+Capacete: Elmo Tece-tempo, Célula: Célula de Amoque +3
+Peitoral: Sombra do Thrax, Célula: Célula Astúcia +3
+Luvas: Aperto de Malkarion, Célula: Célula Amoque +3
+Botas: Cronobotas, Célula: Célula de Pulso +3
+
+Lanterna: Fervor de Shrike, Célula: Célula de Catalisador +3
+
+Função: Build de Velocidade e Dano de Repetidoras

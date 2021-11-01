@@ -1,0 +1,13 @@
+Arma: O Condutor, Habilidade: Nascente Selvagem, Mod: Ponta do Executor, Célula: Célula de Dominação +3 e Célula de Catalizador +3, Vínculo: Lança Trovejante.
+Onicélula: Disciplina
+
+Capacete: Vigia Sombrio, Célula: Célula de Dominação +3
+Peitoral: Jaqueta de Espinhos, Célula: Célula Selvagem +3
+Luvas: Aperto de Malkarion, Célula: Célula Amoque +3
+Botas: Astúcia do Thrax, Célula: Célula de Predador +3
+
+Lanterna: Olha de Drask, Célula: Célula de Catalisador +3
+
+Poções: Elixir de Condução de Aether, Elixir Mãos Rápidas e Elixir do Frenesi
+
+Função: Build pra Farm de XP com Pique

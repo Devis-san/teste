@@ -1,8 +1,0 @@
-Arma: A Fome, Habilidade: Banquete, Mod: Empunhadura Recursiva, Célula: Célula de Disciplina +3 e Célula de Astúcia +3
-
-Capacete: Eco Trágico, Célula: Célula de Ira +3
-Peitoral: Vestes Tece-tempo, Célula: Célula Esmaga-fúria +3
-Luvas: Manoplas Tece-tempo, Célula: Célula de Astúcia +3
-Botas: Cronobotas, Célula: Célula de Pulso +3
-
-Lanterna: Fervor de Shrike, Célula: Célula de Energia +3

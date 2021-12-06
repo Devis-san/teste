@@ -1,9 +1,0 @@
-Arma: Açoite Maligno, Habilidade: Investida Sombria, Mod: Cilindro Sobrecarregado, Célula: Célula de Pulso +3 e Célula Robusta +3, Vínculo: Ira do Soberano.
-Onicélula: Disciplina
-
-Capacete: Elmo de Placa Infernal, Célula: Célula de Pulso +3
-Peitoral: Sombra do Thrax, Célula: Célula de Astúcia +3
-Luvas: Luvas de Gnasher, Célula: Célula Afiada +3
-Botas: Grevas Vulcânicas, Célula: Célula Tenaz +3
-
-Lanterna: Fervor de Shrike, Célula: Célula Zelo +3

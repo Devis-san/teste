@@ -20,4 +20,4 @@ A proposta HORIZON é unir pesquisadores e admiradores da Astronomia e até mesm
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados](diagrama-de-banco-de-dados.png)
+![Diagrama de Banco de Dados](imagens/diagrama-de-banco-de-dados.png)

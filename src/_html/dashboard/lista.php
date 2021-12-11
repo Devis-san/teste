@@ -7,14 +7,12 @@
 
 <?php 
 
-session_start(); 
-
+    session_start(); 
     function deleteUser($conexao, $id)
     {
         $query = "DELETE FROM users WHERE id = '{$id}'";
         
     }
-
     function isAdmin() {
         if ( $_SESSION['USER_GLOBAL_DATA']['user_level'] != 0 ) {
             //É administrador
@@ -28,25 +26,21 @@ session_start();
     if(!isAdmin()) {
         header('location: index.php');
     }
-
     if( empty($_SESSION['USER_GLOBAL_DATA']) == true ){
         Header('Location: /src/_html/_login/login.php');
         exit;
     }
-
     if(isset($_POST['editando'])){
 
         include __DIR__."/../../_sql/sql.php";
         $sql = new Sql();
         $update = "UPDATE tb_usuarios SET desnome = :desnome, desemail = :desemail WHERE id = :id";
-
         //ATUALIZA NO BANCO DE DADOS
         $sql->QuerySQL($update, array(
             ':desnome'=>$_POST['nome'],
             ':desemail'=>$_POST['email'],
             ':id' => $_SESSION['USER_GLOBAL_DATA']['id']
         ));
-
         //ATUALIZA NA SESSÃO
         $_SESSION['USER_GLOBAL_DATA']['desnome'] = $_POST['nome'];
         $_SESSION['USER_GLOBAL_DATA']['desemail'] = $_POST['email'];
@@ -61,9 +55,9 @@ session_start();
             <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
                
                 <div class="navi">
-                <img src="/src/_img/logo.jpg" style="width: 175px!important; height: 70px!important;" &nbsp; alt="mercado" class="hidden-xs hidden-sm">
+                    <img src="/src/_img/logo.jpg" style="width: 175px!important; height: 70px!important;" &nbsp; alt="mercado" class="hidden-xs hidden-sm">
                     <ul>
-                        <li><a href="/src/_html/dashboard/index.php"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Início</span></a></li>
+                        <li><a href="/src/_html/dashboard/index.php"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Editar Perfil</span></a></li>
                         <?php if (isAdmin()) : ?>
                             <li><a href="/src/_html/dashboard/lista.php"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Lista de Usuários</span></a></li>
                         <?php endif; ?>
@@ -77,9 +71,7 @@ session_start();
                 <div class="user-dashboard">
                     <h1>Olá, <?php  echo $_SESSION['USER_GLOBAL_DATA']['desnome'] ?></h1>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12 gutter ">
-
-                            
+                        <div class="col-md-12 col-sm-12 col-xs-12 gutter ">   
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="panel panel-default">
@@ -131,9 +123,6 @@ session_start();
             </div>
         </div>
     </div>
-
-
-
 </body>
 
 <script>
@@ -142,5 +131,4 @@ session_start();
        $("#navigation").toggleClass("hidden-xs");
    });
 });
-
 </script>

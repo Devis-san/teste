@@ -10,7 +10,6 @@ class Sql extends \PDO{
     const PASSWORD = "";
 
 
-
     /**
      * ESTA FUNÇÃO É CHAMADA TODA VEZ QUE ESTA CLASSE É INSTANCIADA ($sql = new Sql())
      * FAZENDO A CONEXÃO NO BANCO DE DADOS.
@@ -56,7 +55,6 @@ class Sql extends \PDO{
      * INSERT, UPDATE, DELETE
      * @param string
      * @param array
-     * @return null
      */
     public function QuerySQL( $rawQuery, $params = array()){
         $stmt = $this->conn->prepare( $rawQuery );
@@ -78,6 +76,8 @@ class Sql extends \PDO{
         $stmt = $this->QuerySQL( $rawQuery, $params );
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
+
+
 
 
     /**

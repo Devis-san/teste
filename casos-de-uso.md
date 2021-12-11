@@ -17,7 +17,8 @@
  - [CDU 13](#CDU-13): Excluir Postagem(Administrador).
  - [CDU 14](#CDU-14): Excluir Comentário(Usuário Autor).
  - [CDU 15](#CDU-15): Excluir Comentário(Administrador).
- - [CDU 16](#CDU-16): Excluir Usuário.
+ - [CDU 16](#CDU-16): Excluir Usuário(Administrador).
+ - [CDU 17](#CDU-17): Excluir o Perfil Próprio.
 
 
 ## Lista dos Atores
@@ -28,7 +29,7 @@
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](diagrama-de-casos.png)
+![Diagrama de Casos de Uso](imagens/diagrama-de-casos.png)
 
 ## Descrição dos Casos de Uso
 
@@ -443,6 +444,58 @@ Buscar Perfil de Usuário
 7. O usuário clica em “Ok”.
 8. O sistema retorna ele até o campo de texto.
 
+### CDU 12
+
+Excluir Postagem(Usuário Autor)
+
+**Fluxo Principal**
+
+1. O sistema apresenta nad postagens um botão para excluí-las, este botão só é visível para o usuário responsável pelas postagens e para os Administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. O sistema exclui a postagem do banco de dados.
+6. O sistema dá um retorno ao usuário confirmando a exclusão.
+7. O usuário clica em “ok”.
+8. Ele é levado de volta à timeline.
+
+**Fluxo Alternativo A**
+
+1. O sistema apresenta nas postagens um botão para excluí-las, este botão só é visível para o usuário responsável pelas postagens para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão da postagem.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente”.
+7. O usuário opta por cancelar.
+8. Ele é levado de volta à timeline.
+
+**Fluxo Alternativo B**
+
+1. O sistema apresenta nas postagens um botão para excluí-las, este botão só é visível para o usuário responsável pelas postagens para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão da postagem.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente” .
+7. O usuário opta por tentar novamente.
+8. O sistema exclui a postagem.
+9. O sistema dá um retorno informando do sucesso na exclusão.
+10. O usuário clica em “ok”.
+11. Ele é levado de volta à timeline.
+
+**Fluxo Alternativo C**
+
+1. O sistema apresenta nas postagens um botão para excluí-las, este botão só é visível para o usuário responsável pelas postagens para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão da postagem.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente”.
+7. O usuário opta por tentar novamente.
+8. Ocorre outro erro no processo de exclusão.
+9. O sistema exibe novamente as opções de “cancelar” e “tentar novamente”.
+
 ### CDU 13
 
 Excluir Postagem(Administrador)
@@ -501,6 +554,58 @@ Excluir Postagem(Administrador)
 11. O Administrador opta por cancelar.
 12. O sistema redireciona o Administrador para a timeline.
 
+### CDU 14
+
+Excluir Comentário(Usuário Autor).
+
+**Fluxo Principal**
+
+1. O sistema apresenta nos comentários um botão para excluí-los, este botão só é visível para o usuário responsável pelos comentários e para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. O sistema exclui o comentário do banco de dados.
+6. O sistema dá um retorno ao usuário confirmando a exclusão.
+7. O usuário clica em “ok”.
+8. Ele é levado de volta aos comentários da postagem.
+
+**Fluxo Alternativo A**
+
+1. O sistema apresenta nos comentários um botão para excluí-los, este botão só é visível para o usuário responsável pelos comentários e para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão da postagem.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente” .
+7. O usuário opta por cancelar.
+8. Ele é levado de volta aos comentários da postagem.
+
+**Fluxo Alternativo B**
+
+1. O sistema apresenta nos comentários um botão para excluí-los, este botão só é visível para o usuário responsável pelos comentários para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão da postagem.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente”.
+7. O usuário opta tentar novamente
+8. O sistema exclui o comentário do banco de dados
+9. O sistema dá um retorno ao usuário confirmando a exclusão.
+10. O usuário clica em “Ok”.
+11. Ele é levado de volta aos comentários da postagem.
+
+**Fluxo Alternativo C**
+
+1. O sistema apresenta nos comentários um botão para excluí-los, este botão só é visível para o usuário responsável pelos comentários para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão da postagem.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente”.
+7. O usuário opta tentar novamente.
+8. Ocorre outro erro no processo de exclusão.
+9. O sistema exibe novamente as opções de “cancelar” e “tentar novamente”.
+
 ### CDU 15
 
 Excluir Comentário(Administrador)
@@ -546,7 +651,7 @@ Excluir Comentário(Administrador)
 
 ### CDU 16
 
-Excluir Usuário
+Excluir Usuário(Administrador)
 
 **Fluxo Principal**
 
@@ -587,9 +692,42 @@ Excluir Usuário
 11. O Administrador clica em “ok”.
 12. Ele é levado de volta à página inicial.
 
+### CDU 17
 
+Excluir o Próprio Perfil(Usuário)
 
+**Fluxo Principal**
 
+1. O sistema apresenta no perfil um botão para excluí-lo, este botão só é visível para o próprio usuário e para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. O sistema exclui o usuário do banco de dados.
+6. O sistema dá um retorno ao usuário confirmando a exclusão.
+7. O usuário (agora visitante) clica em “ok”.
+8. Ele é levado de volta à tela de login.
 
+**Fluxo Alternativo A**
 
+1. O sistema apresenta no perfil um botão para excluí-lo, este botão só é visível para o próprio usuário e para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão do usuário.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente”.
+7. O usuário opta por cancelar.
+8. Ele é levado de volta ao perfil.
 
+**Fluxo Alternativo B**
+
+1. O sistema apresenta no perfil um botão para excluí-lo, este botão só é visível para o próprio usuário e para os administradores.
+2. O usuário clica no botão.
+3. O sistema pede para ele confirmar a exclusão.
+4. O usuário confirma.
+5. Ocorre um erro durante a exclusão do usuário.
+6. O sistema dá um retorno informando do erro e oferece as opções de “cancelar” e “tentar novamente”.
+7. O usuário opta por tentar novamente
+8. O sistema exclui o usuário do banco de dados.
+9. O sistema dá um retorno informando do sucesso da exclusão.
+10. O usuário (agora visitante) clica em “ok”.
+11. Ele é levado de volta à tela de login.

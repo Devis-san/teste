@@ -1,27 +1,46 @@
 # Manual do Usuário
 
-Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nisl sed magna gravida, non elementum urna condimentum. Quisque porta tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis at varius mauris. Quisque molestie ante imperdiet elit blandit, ac volutpat sem efficitur. Donec nec sem tempus, ullamcorper nisl non, blandit tortor. Etiam suscipit rutrum laoreet. Donec facilisis eros ultrices, venenatis quam nec, feugiat ante. Donec ante eros, consequat nec nibh vitae, porta vehicula orci. Duis nec eros et lorem malesuada sodales. Praesent auctor accumsan ipsum, et volutpat ex porttitor eu. Vestibulum facilisis elementum elit, hendrerit mollis velit pretium in. Curabitur tristique vel augue a sodales. Sed malesuada lacinia porttitor.
+ Neste espaço é onde faremos um tour detalhado pelas diversas interfaces de nosso sistema, demonstrando as funções das mesmas enquanto passamos por elas.
 
 **Lista das Funcionalidades:**
 
- - [Funcionalidade X](#Funcionalidade-X)
- - [Funcionalidade Y](#Funcionalidade-Y)
- - [Funcionalidade Z](#Funcionalidade-Z)
+ - [Cadastro](#Tela-de-Cadastro)
+ - [Login](#Tela-de-Login)
+ - [Timeline](#Timeline)
+ - [Buscas](#Resultados-da-Busca)
+ - [Opções de Perfil](#Opções_de_Perfil)
+ 
 
-## Funcionalidade X
+## Tela de Cadastro
+ ![A tela de cadastro](imagens/Cadastro.png)
+ Esta é, como o nome sugere, a tela que receberá você e outros usuários novos ao sistema, aqui vemos os campos para inserir as informações que formarão sua conta (O nome de usuário, o e-mail, a senha e o campo para confirmar a senha), assim como o botão que deverá ser pressionado após o preenchimento para completar o cadastro e registrar os dados no sistema e a opção para ir direto à tela de login, caso você já esteja cadastrado.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat molestie justo non tincidunt. Praesent tristique, elit convallis eleifend congue, nisl ex lobortis lorem, ac gravida tellus lacus eu enim. Aliquam urna turpis, convallis id turpis et, iaculis consequat nunc. Proin elit orci, imperdiet nec tristique nec, tincidunt ut nibh. Donec dignissim urna ut erat imperdiet aliquam. Vestibulum augue leo, pellentesque malesuada egestas quis, molestie at lacus. Donec rhoncus finibus lorem, accumsan interdum sapien facilisis sit amet. Integer odio magna, sodales at varius at, dapibus vitae ante. Sed ac ullamcorper ex. Ut in metus ipsum. Duis vulputate porta mi, id venenatis massa ornare vel. Nunc ornare malesuada elit sed feugiat.
+## Tela de Login
+ ![A tela de login](imagens/Login.png)
+ Esta é a tela para onde serão mandados os usuários que já estão cadastrados no site, para que os mesmos possam acessar suas contas, aqui vemos os campos de texto onde devem ser inseridas as informações da conta em questão (Nome de usuário e senha), para que se seja concedido o acesso, assim como um botão que deverá ser pressionado após o preenchimento para completar o processo e a opção de retornar a tela de cadastro, caso não se tenha uma conta.
+ 
+## Timeline
+ ![A timeline](imagens/Timeline.png)
+ Esta é a tela principal do nosso sistema, aqui vemos uma multitude de opções e funcionalidades, bem mais que nas telas anteriores, estão presentes nesta tela:
+ - A área dedicada para se fazer postagens, com um botão para se resgistrar a postagem após inserir o texto.
+ - As postagens feitas por outros usuários, com as opções de like, dislike e comentário, cada uma com um botão próprio.
+ Ao se escolher a opção de comentar, abre-se um formulário com uma caixa de texto para se inserir o comenta em sí e um botão para registrá-lo.
+ ![Comentar](imagens/Comentar.png)
+ - Na navbar agora se faz presente uma barra de busca, para que se possa procurar por outros usuários, com um botão para realizar a busca do lado. 
+ - Também está presente na navbar a opção de "Perfil", que leva o usuário à uma nova tela com opções relativas ao próprio perfil.
 
-Aliquam in convallis quam, egestas consectetur felis. Integer in dolor sit amet neque volutpat faucibus ut porttitor libero. Morbi faucibus non purus nec finibus. Pellentesque lacus nunc, ultricies quis enim at, vehicula semper nibh. Ut eget erat blandit, porta nibh sit amet, facilisis felis. Aliquam vitae consequat nisi, ut vestibulum sapien. Sed ornare quis leo quis cursus. Vestibulum ut quam odio. Donec sit amet risus augue. Curabitur venenatis a tortor ac placerat.
+## Resultados da Busca
+ ![Os resultados](imagens/Busca.png)
+ Esta é a tela que você verá após realizar uma busca, aqui estão presentes os resultados da sua busca, os usuários encontrados e, em cada um deles, um botão que lhe dá a opção de visitar o perfil desses usuários.
 
-## Funcionalidade Y
-
-In vestibulum euismod orci, vitae mollis neque luctus vel. Aliquam erat volutpat. Pellentesque nulla elit, iaculis posuere interdum a, imperdiet sollicitudin dui. Morbi consectetur cursus dictum. Etiam vel feugiat tortor, non tempor nibh. Nam eu massa libero. Donec id eleifend justo, tempus consectetur augue. Phasellus porttitor ex leo. Proin efficitur ante vel tortor tempus ornare. Cras molestie, velit non laoreet lobortis, nisl metus volutpat augue, id dictum libero ipsum a mi. Quisque eget tristique felis.
-
-Donec auctor a orci a semper. Nunc consequat dui vel eros faucibus molestie. Praesent euismod purus nec justo iaculis varius. Integer vehicula ac metus at ultricies. Maecenas pulvinar neque sed est sollicitudin, vitae dignissim magna posuere. Sed consectetur, mi nec bibendum sodales, urna sem aliquam leo, mollis vulputate justo leo vel nunc. Sed lacinia ipsum lacus, ultrices iaculis tellus efficitur at. Proin consectetur orci ac egestas aliquam. Proin dignissim euismod turpis sollicitudin interdum. Mauris pellentesque, orci non accumsan lobortis, nunc felis hendrerit tortor, non rutrum risus nisl id erat.
-
-## Funcionalidade Z
-
-Sed consequat, diam in imperdiet fringilla, magna metus vehicula ipsum, eu tincidunt massa dolor eget lorem. Integer pellentesque in massa in eleifend. Phasellus a interdum enim. Nullam malesuada nulla eu mi vestibulum imperdiet. Maecenas diam dolor, commodo eget commodo at, congue in libero. Morbi non erat enim. Nunc faucibus lacus urna. Aliquam erat volutpat. Aliquam ex nunc, dictum vel libero sit amet, varius pulvinar risus. Aenean tempus magna at nulla elementum, vel feugiat turpis sodales. Vestibulum viverra congue nibh sed tempor. Morbi faucibus rhoncus dictum. Vestibulum rutrum, nisi id porttitor posuere, purus leo accumsan turpis, sit amet rutrum nulla turpis sit amet ex. Sed ultricies pharetra libero, sed tempor tellus hendrerit eget. Maecenas nibh sem, accumsan ullamcorper felis sed, pharetra semper dolor. Pellentesque ornare lorem eu condimentum tincidunt.
-
-Nam lacinia gravida velit et ultricies. Quisque blandit a ligula at tincidunt. Vestibulum id odio a lectus maximus tempor non in augue. Duis vulputate dui vitae lacus ornare, et eleifend erat cursus. Mauris viverra, massa vel eleifend tempus, nunc justo tempus quam, ac sollicitudin lorem arcu vitae magna. Aliquam eleifend diam neque, at sagittis eros scelerisque vitae. Sed convallis iaculis tempor. Pellentesque in varius velit. Cras ut risus at ligula tristique tincidunt ac a risus. Morbi egestas tincidunt nunc, molestie aliquam nisl imperdiet egestas. Morbi hendrerit augue ac accumsan posuere. Sed a sodales elit. Nullam pharetra rhoncus arcu, eget pharetra massa egestas ut. Sed accumsan auctor dictum. Duis leo enim, pulvinar ut enim a, tempor aliquam dui. Nunc aliquet quam justo, sed aliquet justo tincidunt sed.
+## Opções de Perfil
+ Ao se escolher a opção de "perfil" na navbar, você será redirecionado para esta página com algumas outras opções relacionadas ao seu perfil. Estas são:
+ - "Editar Perfil" lhe permite alterar o seu nome de usuário e o seu e-mail, com campos de texto para a inserção de novos e um botão para confirmar.
+ ![Trocar nome de usuário e e-mail](imagens/Editar.png)
+ - "Alterar Senha" como o nome sugere, é um espaço dedicado ao gerenciamento da sua senha. Para criar uma nova, simplesmente insira a antiga no campo indicado, a nova logo embaixo e confirme a nova, logo após, pressione o botão "Editar" para confirmar a mudança.
+ ![Alterar a senha](imagens/Senha.png)
+ - "Desconectar" obviamente lhe desconectará de sua conta atual e, em seguida, o levará de volta à tela de login.
+ ![Desconectar](imagens/Login.png)
+ - "Voltar" te levará de volta à timeline.
+ ![Voltar](imagens/Timeline.png)
+ 
